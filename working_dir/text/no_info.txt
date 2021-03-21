@@ -1,0 +1,4 @@
+
+						<tr>
+							<td colspan="2">No information received</td>
+						</tr>

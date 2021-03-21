@@ -1,0 +1,6 @@
+<?php
+	use xPaw\MinecraftPing;
+	use xPaw\MinecraftPingException;
+
+	// Edit this ->
+	define( 'MQ_SERVER_ADDR', '
