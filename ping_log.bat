@@ -48,7 +48,7 @@ echo "%cd%\working_dir\stored_out_original.txt" | findstr online>"%cd%\working_d
 
 echo ===================================================================== >>log.txt
 
-echo %date% %time:~0,-3%>>%cd%\log.txt
+echo %date% %time:~0,-3%>>"%cd%\log.txt"
 
 type "%cd%\working_dir\stored_out_original.txt" | findstr [ | findstr /v Array | findstr /v sample >>"%cd%\log.txt"
 
