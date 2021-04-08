@@ -42,9 +42,9 @@ goto new_ping
 
 :copy
 
-copy "%cd%\working_dir\out_original.txt" "%cd%\working_dir\stored_out_original.txt"nul 2>&1
+copy "%cd%\working_dir\out_original.txt" "%cd%\working_dir\stored_out_original.txt">nul 2>&1
 
-type "%cd%\working_dir\stored_out_original.txt" | findstr online>"%cd%\working_dir\online_stored.txt"
+echo "%cd%\working_dir\stored_out_original.txt" | findstr online>"%cd%\working_dir\online_stored.txt"
 
 echo ===================================================================== >>log.txt
 
