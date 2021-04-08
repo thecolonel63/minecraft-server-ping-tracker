@@ -80,7 +80,7 @@ choice /m "Install individual player audio notifier?"
 
 set AUDLVL=%ERRORLEVEL%
 
-if %AUDLVL% equ 1 curl -L https://www.dropbox.com/s/0od62w64p5g0auk/player_detector.bat?dl=1 --output "%cd%\working_dir\player_detector.bat"
+if %AUDLVL% equ 1 curl -L https://www.dropbox.com/s/2c27w57lubausvr/player_detector.bat?dl=1 --output "%cd%\working_dir\player_detector.bat"
 
 if %AUDLVL% equ 1 mkdir "%cd%\working_dir\sounds"
 
