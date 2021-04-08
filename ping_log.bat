@@ -54,9 +54,9 @@ type "%cd%\working_dir\stored_out_original.txt" | findstr [ | findstr /v Array |
 
 echo ===================================================================== >>log.txt
 
-if exist "%cd%\working_dir\open_log.vbs" "%cd%\working_dir\open_log.vbs"
+if exist "%cd%\working_dir\open_log.vbs" start "" "%cd%\working_dir\open_log.vbs"
 
-if exist "%cd%\working_dir\player_detector.bat" start /min "%cd%\working_dir\player_detector.bat"
+if exist "%cd%\working_dir\player_detector.bat" start "" /min "%cd%\working_dir\player_detector.bat"
 
 goto new_ping
 
