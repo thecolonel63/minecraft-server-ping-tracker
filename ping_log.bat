@@ -22,7 +22,7 @@ set SEL=%ERRORLEVEL%
 
 type "%cd%\working_dir\out_original.txt" | findstr online>"%cd%\working_dir\online.txt"
 
-fc "%cd%\working_dir\online.txt" "%cd%\working_dir\online_stored.txt">nul 2>&1
+fc working_dir\online.txt working_dir\online_stored.txt>nul 2>&1
 
 set DIFFCOUNT=%ERRORLEVEL%
 
@@ -44,7 +44,7 @@ goto new_ping
 
 copy "%cd%\working_dir\out_original.txt" "%cd%\working_dir\stored_out_original.txt">nul 2>&1
 
-echo "%cd%\working_dir\stored_out_original.txt" | findstr online>"%cd%\working_dir\online_stored.txt"
+type %cd%\working_dir\stored_out_original.txt | findstr online>%cd%\working_dir\online_stored.txt
 
 echo ===================================================================== >>log.txt
 
